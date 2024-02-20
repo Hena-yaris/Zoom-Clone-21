@@ -1,0 +1,44 @@
+
+// const express= require('express')
+// const app=express();
+
+// const server=require('http').Server(app);
+
+// const io = require("socket.io")(server);//serverachnn pass eyederegn new then connect aderegu malet new.
+
+
+// const { v4: uuidV4 } = require("uuid");
+
+// const { ExpressPeerServer } = require("peer");
+// const peerServer = ExpressPeerServer(server, {
+//   debug: true,
+// });
+
+// //about permission
+// app.set("view engine", "ejs");
+// app.use(express.static("public"));
+// app.use("/peerjs", peerServer);//peerjs simeta astenagd
+
+// app.get("/", (req, res) => {
+//   res.redirect(`/${uuidV4()}`);
+// });//every time home paju simeta responsh yemihonew home pajun yzeh generat kemideregew gar and adrgachew
+
+// app.get("/:room", (req, res) => {
+//   res.render("room", { roomId: req.params.room });
+// });// slash blo yehone parameter kalew render yemtadergln room yemibalewn new.room mu malet degmo htmlu new egna yefeternew//:room yefelegnewn malet enchlalen 
+
+
+
+
+// //kelaw connect sladeregu connection yemibal event happen yadergal.
+// io.on("connection", (socket) => {
+//   socket.on("join-room", (roomId) => {
+//     // console.log("hena joined",roomId);
+//     socket.join(roomId);//be roomid w join endiaderg join method
+//     socket.to(roomId).broadcast.emit("user_connected");
+//     //sew join siyaderg le roomu emit adrg join adrgewal bleh
+//   });
+// });
+
+
+// server.listen(process.env.PORT || 3000);
